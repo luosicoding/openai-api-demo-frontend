@@ -19,7 +19,7 @@ async function generateText() {
 
 <template>
   <div class="container">
-    <h1 class="title">OpenAI文本生成器</h1>
+    <h3 class="title">OpenAI文本生成器</h3>
 
     <p>请输入提示文字</p>
     <textarea class="prompt-box" ref="promptForText"></textarea>
@@ -33,7 +33,7 @@ async function generateText() {
 <style scoped>
 .container {
   margin: auto;
-  max-width: 800px;
+  width: 80%;
   border-radius: 5px;
   text-align: center;
   background-color: beige;

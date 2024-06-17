@@ -13,5 +13,6 @@ import ImageGenerator from './components/ImageGenerator.vue'
 <style scoped>
 .root {
   position: relative;
+  width: 1280px;
 }
 </style>

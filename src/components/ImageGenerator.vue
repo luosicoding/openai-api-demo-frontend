@@ -27,11 +27,11 @@ async function generateImage() {
 
 <template>
   <div class="container">
-    <h1 class="title">OpenAI图片生成器</h1>  
+    <h3 class="title">OpenAI图片生成器</h3>  
   
     <p>请输入提示文字</p>
     <textarea class="prompt-box" ref="prompt"></textarea>
-    <input type="button" value="生成图片" class="image-generate-button" @click="generateImage"/>
+    <input type="button" value="生成图片" class="image-generate-button" @click="generateImage"/><br/>
     <div v-if="loading" class="help-text">正在生成图片...</div>
     <img v-if="!loading && imageUrl !== ''" :src="imageUrl" class="img"/>
   </div>
@@ -40,7 +40,7 @@ async function generateImage() {
 <style scoped>
 .container {
   margin: auto;
-  max-width: 800px;
+  max-width: 80%;
   border-radius: 5px;
   text-align: center;
   background-color: beige;
